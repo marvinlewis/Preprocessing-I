@@ -49,11 +49,70 @@ table {
 }
 
 /* Set every element's box-sizing to border-box */
+ 
+/* Mixins*/
+
+.paragraph-styles {
+	font-size: 3rem;
+	line-height: 1.5;
+	color: sandybrown;
+	}
+
+.border { 
+	border: 2px black solid;
+}
+
+	@background: grey;
+
+	@width: 45%
+
+.box-setups {
+	margin: 20px auto;
+}
+
+/* Code Starts */
+
+
 * {
     box-sizing: border-box;
 }
 
 html, body {
-    height: 100%;
+	height: 100%;
+	font-size: 62.5%;
+	padding: 20px;
+}
+
+.navbar {
+	text-decoration: unset;
+	color: sandybrown;
+	display: flex;
+	justify-content: space-evenly;
+	font-size: 2.3rem; 
+	.box-setups() 
+	
+}
+
+.image-box {
+	.paragraph-styles()
+}
+
+.mjsnowpic {
+	width: 25%;
+	box-sizing: border-box;
+}
+
+.top-page-box {
+	width:100%;
+	display: flex;
+	justify-content: center;
+	background-color: gray;
+}
+
+.top-page-writing-box{
+	width: 45%;
+	text-align: center;
+	.paragraph-styles()
+
 }
 
