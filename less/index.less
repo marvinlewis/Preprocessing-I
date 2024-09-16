@@ -49,11 +49,131 @@ table {
 }
 
 /* Set every element's box-sizing to border-box */
+ 
+/* Mixins*/
+
+.paragraph-styles {
+	font-size: 3rem;
+	line-height: 1.5;
+	color: sandybrown;
+	}
+
+.border { 
+	border: 5px black solid;
+}
+
+	@background: grey;
+
+	@width: 97%;
+
+	@margin: 20px auto;
+
+.box-setups {
+	margin: 20px auto;
+}
+
+.pic-setup {
+	width: 33%;
+	box-sizing: border-box;
+
+}
+
+/* Code Starts */
+
+
 * {
     box-sizing: border-box;
 }
 
 html, body {
-    height: 100%;
+	height: 100%;
+	font-size: 62.5%;
+	padding: 20px;
 }
 
+.navbar {
+	text-decoration: unset;
+	color: sandybrown;
+	display: flex;
+	justify-content: space-evenly;
+	font-size: 2.3rem; 
+	margin-bottom: 20px;
+	
+}
+
+.image-box {
+	margin: 20px;
+	.border();
+	display: flex;
+	justify-content: space-evenly;
+
+	@media(max-width: 500px) {
+		display: flex;
+		flex-direction: column;
+}
+
+.mjsnowpic {
+	.pic-setup();
+}
+
+.mjramshorn {
+	.pic-setup();
+}
+
+.mjatwedding {
+	.pic-setup();
+}
+
+.top-page-box {
+	width:100%;
+	display: flex;
+	justify-content: center;
+	background-color: gray;
+	.border();
+	align-items: center;
+}
+
+.top-page-writing-box{
+	width: 45%;
+	text-align: center;
+	.paragraph-styles()
+}
+
+.middle-page-box {
+	.paragraph-styles();
+	display: flex;
+	justify-content: space-between;
+	margin-top: 30px;
+
+}
+
+.middle-page-writting-box {
+	width: 45%;
+	.border();
+	text-align: center;
+	box-sizing: border-box;
+	padding: 0 5px;
+}
+
+.stuff-im-into {
+	width: 45%;
+	.border();
+	text-align: center;
+}
+
+.Work-history {
+	width: 100%;
+	.paragraph-styles();
+	margin-top: 25px;
+	background-color: @background;
+	.border();
+	padding: 10px;
+	box-sizing: border-box;
+}
+
+.contact {
+	width: 100%;
+	.paragraph-styles();
+	text-align: center;
+
+}

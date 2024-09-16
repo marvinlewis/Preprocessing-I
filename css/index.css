@@ -1,1 +1,238 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+/* Mixins*/
+.paragraph-styles {
+  font-size: 3rem;
+  line-height: 1.5;
+  color: sandybrown;
+}
+.border {
+  border: 5px black solid;
+}
+.box-setups {
+  margin: 20px auto;
+}
+.pic-setup {
+  width: 33%;
+  box-sizing: border-box;
+}
+/* Code Starts */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  font-size: 62.5%;
+  padding: 20px;
+}
+.navbar {
+  text-decoration: unset;
+  color: sandybrown;
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 2.3rem;
+  margin-bottom: 20px;
+}
+.image-box {
+  margin: 20px;
+  border: 5px black solid;
+  display: flex;
+  justify-content: space-evenly;
+}
+.mjsnowpic {
+  width: 33%;
+  box-sizing: border-box;
+}
+.mjramshorn {
+  width: 33%;
+  box-sizing: border-box;
+}
+.mjatwedding {
+  width: 33%;
+  box-sizing: border-box;
+}
+.top-page-box {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: gray;
+  border: 5px black solid;
+  align-items: center;
+}
+.top-page-writing-box {
+  width: 45%;
+  text-align: center;
+  font-size: 3rem;
+  line-height: 1.5;
+  color: sandybrown;
+}
+.middle-page-box {
+  font-size: 3rem;
+  line-height: 1.5;
+  color: sandybrown;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+.middle-page-writting-box {
+  width: 45%;
+  border: 5px black solid;
+  text-align: center;
+  box-sizing: border-box;
+  padding: 0 5px;
+}
+.stuff-im-into {
+  width: 45%;
+  border: 5px black solid;
+  text-align: center;
+}
+.Work-history {
+  width: 100%;
+  font-size: 3rem;
+  line-height: 1.5;
+  color: sandybrown;
+  margin-top: 25px;
+  background-color: grey;
+  border: 5px black solid;
+  padding: 10px;
+  box-sizing: border-box;
+}
+.contact {
+  width: 100%;
+  font-size: 3rem;
+  line-height: 1.5;
+  color: sandybrown;
+  text-align: center;
+}
+h2 {
+  font-size: 2.5rem;
+  text-decoration: underline;
+}
